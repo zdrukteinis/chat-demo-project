@@ -1,0 +1,50 @@
+.container {
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: calc(100% - 40px);
+  max-width: 900px;
+  margin: 20px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0px 3px 10px 1px rgba(0,0,0,0.2);
+  background-color: white;
+}
+
+.title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 100px;
+  margin: 0;
+  color: white;
+  background: #005C97;
+  background: -webkit-linear-gradient(to right,#363795,#005C97);
+  background: linear-gradient(to right,#363795,#005C97);
+}
+
+@media (min-width: 600px) {
+  .logo {
+      height:40px;
+      margin: 1em;
+  }
+
+  .ably {
+      height: 60px;
+  }
+}
